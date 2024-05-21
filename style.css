@@ -1,0 +1,1064 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body{
+    background-color: #161616;
+    font-family: 'Myriad Pro', Myriad, 'Liberation Sans', 'Nimbus Sans L', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#background{
+    width: 86%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 -14px 51px 10.2px rgba(0, 0, 0, 0.33);
+}
+
+header{
+    background: right 0% / 1800px no-repeat url('images/title_background.jpg'),
+    right 0% / auto 100% repeat-x url('images/title_background_color.jpg');
+    color: white;
+    padding: 0 7%;
+    font-size: 1.125em;
+}
+
+h1, h3, h4, nav a{
+    font-weight: 600;
+}
+
+nav a:hover{
+    padding-bottom: 2px;
+    border-bottom: 1px solid #ffc600;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+hr{
+    height: 2px;
+    border-width: 0;
+}
+
+.title{
+    width: fit-content;
+}
+
+.title.collapsible .heading{
+    width: fit-content;
+    margin-right: 20px;
+}
+
+.title h1{
+    font-size: 1.875em;
+    line-height: 1.666666em;
+}
+
+.title h1 span{
+    font-size: 1.666666em;
+}
+
+div.border{
+    width: 5.25em;
+    float: right;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+section#projects .border, section#strat .border, section#services .border{
+    width: 8.3125em;
+    height: 4.388px;
+}
+
+.title::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.content p.italic{
+    margin-bottom: 26.331px;
+}
+
+.content p:not(.italic){
+    font-size: 0.875rem;
+    color: #595959;
+}
+
+span.yellow{
+    color: #ffc600;
+}
+
+#pageTitle{
+    padding: 68px 2.838%;
+}
+
+#pageTitle .logo h1{
+    font-size: calc(min(11.23em, 21.971vw));
+    font-weight: 700;
+    width: fit-content;
+}
+
+#pageTitle>p{
+    width: 410px;
+}
+
+.link{
+    color: #ffc600;
+    margin-top: 35px;
+}
+
+header .title h1{
+    font-size: calc(min(3.3333333em, 7.8125vw));
+    font-weight: 700;
+    line-height: normal;
+    width: 500px;
+    height: auto;
+}
+
+header .title{
+    background: center -12.06px / calc(max(100%, 1308px)) no-repeat url('images/header_background.jpg');
+    width: 100%;
+    padding: 0 3.75% 404px;
+}
+
+header .drop{
+    margin-top: 29.1px;
+    position: relative;
+}
+
+header ul.dropContent.show a{
+    font-size: 1em;
+}
+
+.drop .btnWrapper{
+    float: right;
+}
+
+.drop button{
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: #ffc600;
+    font-size: 1.5em;
+    padding: 5px 8px;
+}
+
+.drop ul.dropContent.show{
+    display: block;
+    background-color: #161616;
+    width: fit-content;
+    position: absolute;
+    top: 33.2px;
+    right: 0;
+    z-index: 10;
+}
+
+.drop ul.dropContent.show>li{
+    display: block;
+    padding: 10px 15px;
+    margin: 0;
+}
+
+nav ul.dropContent.show>li:not(:last-child){
+    border-bottom: 1px solid white;
+}
+
+ul.dropContent.show li{
+    line-height: 0.6875rem;
+}
+
+ul.dropContent.show a{
+    font-size: 0.5625rem;
+    color: #ffc600;
+}
+
+ul.dropContent.show a:hover{
+    color: white;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #ffc600;
+}
+
+@media (max-width: 768px){
+    .title.collapsible{
+        width: auto;
+    }
+
+    .title.collapsible .heading{
+        float: left;
+    }
+
+    .title.collapsible nav{
+        float: left;
+    }
+
+    .drop button{
+        display: inline-block;
+        font-size: 4.7336vw;
+    }
+
+    .drop button:hover{
+        color: white;
+        cursor: pointer;
+    }
+
+    ul.dropContent{
+        display: none;
+    }
+
+    .title.collapsible::after{
+        content: '';
+        clear: both;
+        display: block;
+    }
+}
+
+nav ul.dropContent:not(.category)>li{
+    display: inline;
+    margin-right: 35px;
+}
+
+header nav a{
+    color: #ffc600;
+}
+
+header nav a:hover{
+    color: white;
+}
+
+@media (max-width: 768px){
+    #pageTitle{
+        padding: 25px 2.838%;
+    }
+    #pageTitle .logo{
+        float: left;
+    }
+
+    #pageTitle .logo h1{
+        font-size: 1em;
+    }
+
+    #pageTitle>p{
+        display: none;
+    }
+
+    #pageTitle .link{
+        float: right;
+        margin: 0;
+    }
+
+    #pageTitle .link>p{
+        font-size: 0.833333em;
+    }
+
+    #pageTitle::after{
+        content: '';
+        clear: both;
+        display: block;
+    }
+}
+
+section#about{
+    padding-bottom: 12.35px;
+    overflow: hidden;
+}
+
+section#about .title{
+    width: 37.481%;
+    margin-left: 10.75%;
+    margin-top: 50.5px;
+    padding: 28.5px 0 5.5px 0;
+    float: left;
+    border-right: 1px solid #c5c5c5;
+}
+
+section#about .title h3{
+    font-size: 1.875em;
+    line-height: 30px;
+    color: #717171;
+    margin-left: 4.5px;
+}
+
+section#about .logo{
+    height: 69.11px;
+    width: fit-content;
+}
+
+section#about .logo>.border{
+    width: 8.3125em;
+    height: 19px;
+    margin-left: 31%;
+}
+
+section#about .title h1{
+    font-size: 4.2em;
+    line-height: 50px;
+    height: auto;
+    margin-top: 20px;
+}
+
+section#about .content{
+    width: 50%;
+    margin: 40.6px 0 82.2px;
+    float: right;
+}
+
+@media (max-width: 768px){
+    section#about .title{
+        width: 80%;
+        margin-left: 10.75%;
+        margin-top: 50.5px;
+        padding: 28.5px 0 5.5px 0;
+        float: none;
+    }
+
+    section#about .content{
+        width: 95%;
+        margin: 40.6px auto 82.2px;
+        float: none;
+    }
+}
+
+section#about #works{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+}
+
+section#about .work{
+    width: 235px;
+    margin: 0 6% 35px;
+}
+
+section#about .work .icon{
+    width: 62.5px;
+    height: 62.5px;
+    margin: 0 auto;
+    padding: 18px 12px;
+    border: 2px solid #ffa800;
+    border-radius: 62.5px;
+    background-color: #e8e8e8;
+}
+
+section#about .work h5{
+    font-size: 1.125em;
+    margin: 26.331px auto;
+}
+
+section#about .work p{
+    font-size: 0.625em;
+    margin-bottom: 18.65px;
+}
+
+section#about::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+section#projects{
+    overflow: hidden;
+    padding-bottom: 21.94px;
+}
+
+section#projects .title{
+    width: auto;
+    padding: 58.14px 6.761% 0;
+}
+
+section#projects nav{
+    margin: 15.39px 0 23.4px;
+}
+
+section#projects nav .drop{
+    position: relative;
+}
+
+section#projects nav .show{
+    position: absolute;
+    top: 30.8px;
+    width: 140px;
+}
+
+@media (min-width: 769px) {
+    section#projects ul.dropContent a{
+        color: #101010;
+    }
+}
+
+section#projects table{
+    table-layout: fixed;
+    width: 100%;
+}
+
+section#projects table td>.thumbnail{
+    height: 19.1vw;
+    overflow: hidden;
+    position: relative;
+    background-color: #101010;
+}
+
+section#projects table td>.thumbnail img{
+    transition: opacity 0.4s;
+}
+
+section#strat{
+    padding: 0 6.761% 70px;
+}
+
+section#strat .title{
+    margin-top: 58.14px;
+}
+
+section#strat>.content{
+    margin-bottom: 50.5px;
+}
+
+section#strat p.italic{
+    margin-top: 26.331px;
+}
+
+section#strat .steps{
+    padding: 0 8.67%;
+}
+
+section#strat .steps .title::after{
+    content: none;
+}
+
+section#strat .steps .stratImage{
+    width: 50%;
+    height: 430px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+
+section#strat .steps .stratImage>img{
+    min-width: 100%;
+    min-height: 430px;
+    height: auto;
+    position: absolute;
+}
+
+section#strat .steps>.content{
+    width: 50%;
+    padding: 1.5% 4.5% 3.5%;
+    float: right;
+}
+
+section#strat .steps>.content .title{
+    margin: 0;
+}
+
+section#strat .steps:nth-child(2n) .stratImage{
+    float: right;
+}
+
+section#strat .steps:nth-child(2n) .stratImage>img{
+    right: 0px;
+}
+
+section#strat .steps:nth-child(2n)>.content{
+    float: left;
+}
+
+@media (max-width: 768px) {
+    section#strat .steps:not(:last-child){
+        margin-bottom: 40px;
+    }
+
+    section#strat .steps>.content{
+        width: 100%;
+        padding: 1.5% 0 3.5%;
+        float: none;
+    }
+    
+    section#strat .steps>.content .title{
+        width: 100%;
+    }
+    
+    section#strat .steps>.content .title h1{
+        height: auto;
+        font-size: 1.125em;
+    }
+
+    section#strat .steps:nth-child(2n)>.content{
+        float: none;
+    }
+    
+    section#strat .steps .stratImage{
+        width: 30%;
+        height: auto;
+        aspect-ratio: 430/288;
+        margin: 0 6.35% 10px 0;
+    }
+
+    section#strat .steps:nth-child(2n)>.stratImage{
+        margin: 0 0 10px 6.35%;
+    }
+
+    section#strat .steps .stratImage>img{
+        height: 100%;
+        width: auto;
+        min-width: auto;
+        min-height: auto;
+    }
+}
+
+section#strat .steps::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+section#services{
+    background: center 0% / calc(max(100%, 1228px)) no-repeat url('images/services_background.png'),
+    linear-gradient(0.25turn, #6b3c5c, #1e2a4c 50%);
+    padding: 45px 7.85% 67px 4.17%;
+    color: white;
+}
+
+section#services table{
+    margin-left: 35.3%;
+    margin-top: 49.3px;
+    text-align: left;
+}
+
+section#services table td>h4{
+    font-size: 1.125em;
+    font-weight: 400;
+}
+
+section#services table td>p{
+    font-size: 0.6875em;
+    margin: 33px 25.33% 85.5px 0;
+}
+
+section#services table tr:last-child p{
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px){
+    section#services table{
+        margin: 49.3px auto 0;
+    }
+
+    section#services table td>h4{
+        font-size: 1em;
+    }
+
+    section#services table td>p{
+        margin: 15px 25.33% 50px 0;
+    }
+}
+
+section#team{
+    padding: 84.35px 5.76% 166.76px 4.17%;
+}
+
+section#team .title{
+    margin-top: 16.5px;
+    float: left;
+}
+
+section#team .content{
+    float: right;
+    width: 73%;
+}
+
+section#team .content>p{
+    width: 79%;
+}
+
+section#team #crew{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section#team #crew .member{
+    text-align: center;
+    margin-top: 38.4px;
+}
+
+section#team #crew .photo{
+    width: 198.5px;
+    height: 204px;
+    margin-bottom: 17.55px;
+    overflow: hidden;
+    position: relative;
+}
+
+section#team #crew .photo>img{
+    height: 103.225%;
+    position: absolute;
+    top: -5px;
+    right: -46px;
+}
+
+section#team::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+@media (max-width: 768px){
+    section#team .title{
+        margin-bottom: 25px;
+        float: none;
+    }
+    
+    section#team .content{
+        float: none;
+        width: 95%;
+    }
+
+    section#team #crew{
+        justify-content: space-around;
+    }
+}
+
+section#testimonial{
+    background-color: black;
+    padding: 60.34px 4.09% 150.3px;
+    color: white;
+}
+
+section#testimonial .content{
+    width: 68%;
+    margin-top: 6.43%;
+    padding: 0 7.64% 0 3.82%;
+    float: left;
+}
+
+section#testimonial .author{
+    float: left;
+    text-align: center;
+}
+
+section#testimonial .author .photo{
+    width: 127px;
+    height: 127px;
+    margin-bottom: 25px;
+    background-color: #ffa800;
+    border: 2.5px solid #ffa800;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+section#testimonial .author .photo>img{
+    height: 100%;
+}
+
+section#testimonial::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+@media (max-width: 768px){
+    section#testimonial .content{
+        width: 95%;
+        float: none;
+    }
+    
+    section#testimonial .author{
+        float: none;
+        width: 55%;
+        margin-top: 25px;
+        margin-left: 3.82%;
+    }
+
+    section#testimonial .author .photo{
+        width: 40px;
+        height: 40px;
+        margin: 0 3.82% 0 0;
+        border-radius: 100%;
+        float: left;
+    }
+
+    section#testimonial .author .caption{
+        float: left;
+    }
+
+    section#testimonial .author::after{
+        content: '';
+        clear: both;
+        display: block;
+    }
+}
+
+section#blog{
+    padding: 33px 4.84% 115px;
+}
+
+section#blog #wrapper{
+    float: left;
+    width: 32.35%;
+}
+
+section#blog .title{
+    margin-top: 26px;
+}
+
+section#blog nav{
+    width: 175px;
+    margin: 55.95px 0 0 24.16%;
+    font-size: 1.125em;
+    line-height: 2.25em;
+}
+
+section#blog nav a{
+    color: black;
+}
+
+section#blog nav .drop{
+    position: relative;
+}
+
+section#blog nav .show{
+    position: absolute;
+    top: 33.2px;
+}
+
+section#blog nav .show li{
+    padding: 10px 15px;
+}
+
+section#blog nav .show a{
+    color: white;
+}
+
+section#blog nav a:hover, section#blog nav a.active, footer nav a.active{
+    color: #ffc600;
+    border: none;
+}
+
+section#blog .content{
+    float: right;
+    width: 67.65%;
+    display: flex;
+    justify-content: space-between;
+}
+
+section#blog .news{
+    width: 180px;
+}
+
+section#blog .news p{
+    font-size: 0.9375rem;
+    color: black;
+}
+
+section#blog .news p.yellow{
+    font-size: 1.125em;
+    color: #ffc600;
+    margin: 10px 0 29px;
+}
+
+section#blog .news p.italic{
+    font-size: 0.75em;
+    margin-top: 19px;
+}
+
+section#blog::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+@media (max-width: 1030px){
+    section#blog .news:last-child{
+        display: none;
+    }
+}
+
+@media (max-width: 900px){
+    section#blog .content{
+        justify-content: center;
+    }
+
+    section#blog .news:nth-child(2){
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    section#blog .content, section#blog #wrapper{
+        width: auto;
+        float: none;
+    }
+    
+    section#blog .title{
+        float: left;
+        margin-top: 0;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    section#blog nav{
+        width: auto;
+        margin: 15.39px 0 23.4px;
+    }
+
+    section#blog #wrapper::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+section#contact{
+    background-color: #2046b3;
+    color: white;
+    overflow: hidden;
+}
+
+section#contact #map{
+    float: left;
+    width: 41.73%;
+    height: 684px;
+}
+
+section#contact #map img{
+    transform: scale(0.75);
+
+}
+
+section#contact #text{
+    width: 58.27%;
+    padding: 0 6.312%;
+    float: right;
+}
+
+section#contact #info{
+    width: 58.27%;
+    padding: 0 6.312% 44px;
+    float: right;
+}
+
+section#contact .title{
+    margin: 45px 0 0 4.185%;
+}
+
+section#contact .border{
+    width: 10.75em;
+}
+
+section#contact form{
+    width: 74.965%;
+    margin: 18px 0 33.5px 0;
+}
+
+input, textarea{
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #c5c5c5;
+    padding: 9px 12px;
+}
+
+input{
+    margin-top: 18px;
+}
+
+textarea{
+    margin-top: 12px;
+}
+
+section#contact form>*::placeholder, form button{
+    font-family: 'Myriad Pro', Myriad, 'Liberation Sans', 'Nimbus Sans L', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+form>*::selection{
+    background-color: black;
+}
+
+form button{
+    background-color: #ffa600;
+    color: black;
+    width: 108px;
+    height: 33px;
+    border: none;
+    margin-top: 20px;
+}
+
+form button:hover, form button:active{
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid #ffc600;
+}
+
+section#contact #info>h4{
+    line-height: 4.3125em;
+    margin-left: 4%;
+}
+
+section#contact table{
+    margin-left: 4%;
+}
+
+section#contact table td:first-child{
+    width: 30.75%;
+}
+
+section#contact table h4{
+    line-height: 2.1875em;
+}
+
+section#contact table p{
+    font-size: 0.75em;
+}
+
+section#contact hr{
+    margin-top: 18px;
+    width: 74.965%;
+    background-color: #c5c5c5;
+}
+
+section#contact .social{
+    padding: 8px 18px 0;
+}
+
+section#contact .social img{
+    padding: 0 4px;
+}
+
+section#contact::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+@media (max-width: 768px){
+    section#contact #text{
+        margin-top: 40px;
+    }
+
+    section#contact #map{
+        width: 100%;
+        height: 300px;
+        float: none;
+    }
+    
+    section#contact #text, section#contact #info{
+        width: 100%;
+        float: none;
+    }
+}
+
+footer{
+    margin: 73px 0 38px;
+    background-color: black;
+    color: white;
+}
+
+footer #leftCol{
+    width: 26.661%;
+    padding: 122px 2.16% 45px;
+    float: left;
+}
+
+footer .logo h1{
+    font-size: calc(min(3.75em, 5.52vw));
+    font-weight: 700;
+}
+
+footer nav ul{
+    margin: 41.5px 0 37px;
+}
+
+footer nav ul>li{
+    line-height: 2.25em;
+}
+
+footer nav a{
+    color: white;
+}
+
+footer nav a:hover{
+    color: #ffc600;
+    padding: 0;
+    border: none;
+}
+
+footer hr{
+    width: 42.5%;
+    background-color: #ffc600;
+}
+
+footer .social{
+    padding: 14px 2px 0;
+}
+
+footer .social img{
+    padding-right: 5px;
+}
+
+footer #rightCol{
+    background: left 0% / auto 102.294% no-repeat url('images/footer_background.png');
+    width: 73.339%;
+    height: 680.725px;
+    float: right;
+    position: relative;
+}
+
+footer #rightCol h1{
+    font-size: calc(min(6.925em, 8.13vw));
+    font-weight: 700;
+    line-height: 88.64px;
+    margin-bottom: 68px;
+    margin-left: 2.832%;
+    position: absolute;
+    bottom: 0;
+}
+
+footer::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+@media (max-width: 768px){
+    footer #leftCol{
+        width: 100%;
+        padding-top: 40px;
+        float: none;
+    }
+
+    footer nav{
+        column-width: 175px;
+        margin: 24px 0 16px;
+    }
+
+    footer #leftCol ul{
+        margin: 0;
+    }
+
+    footer #rightCol{
+        display: none;
+    }
+}
+
